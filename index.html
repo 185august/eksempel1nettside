@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eksempel August</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <button onclick="noLayout();">Ingen layout</button>
+    <button onclick="verticalLayout()">Vertikal layout</button>
+    <button onclick="horizontalLayout()">Horisontal layout</button>
+    <button onclick="gridLayout()">Grid layout</button>
+    
+    <h1>Eksempel 1</h1>
+<div id="cards">
+    <div  class="card">
+        <div onclick="showTextGreen();"  id="headerGreen" class="header Green">
+            Verktøy
+        </div>
+         <div id="innerCardGreen"></div>   
+    </div>
+    <div class="card">    
+        <div onclick="showTextBlue();" id="headerBlue" class="header Blue" >
+            HTML
+        </div>
+        <div id="innerCardBlue"></div>        
+    </div>
+    <div class="card">
+        <div onclick="showTextRed(); " class="header Red">CSS</div>
+        <div id="innerCardRed"></div>
+    </div>
+    <div class="card">
+        <div onclick="showTextYellow();" class="header Yellow">JavaScript</div>
+        <div id="innerCardYellow"></div>
+    </div>
+    <div class="card">
+        <div onclick="showTextBlack();" class="header Black">Hode, kropp og ben</div>
+        <div id="innerCardBlack" class="bodies"></div>
+    </div>
+</div>
+</body>
+</html>
