@@ -1,25 +1,25 @@
-    function noLayout(){
-        document.getElementById('cards').classList.value = '';
-    }
+function noLayout() {
+  document.getElementById("cards").classList.value = "";
+}
 
-    function verticalLayout() {
-        noLayout();
-        document.getElementById('cards').classList.add('vertical');
-    }
+function verticalLayout() {
+  noLayout();
+  document.getElementById("cards").classList.add("vertical");
+}
 
-    function horizontalLayout() {
-        noLayout();
-        document.getElementById('cards').classList.add('horizontal');
-    }
+function horizontalLayout() {
+  noLayout();
+  document.getElementById("cards").classList.add("horizontal");
+}
 
-    function gridLayout() {
-        noLayout();
-        document.getElementById('cards').classList.add('grid');
-    }
-    
-    function showTextGreen() { 
-    blankAll();
-    document.getElementById('innerCardGreen').innerHTML = /*HTML*/ `        
+function gridLayout() {
+  noLayout();
+  document.getElementById("cards").classList.add("grid");
+}
+
+function showTextGreen() {
+  blankAll();
+  document.getElementById("innerCardGreen").innerHTML = /*HTML*/ `        
     <div id="innerCardGreen" class="innerCard">
             De to viktigste verktøyene vi skal bruke er disse:
             <ul>
@@ -43,11 +43,11 @@
             </ul>
         </div>
     `;
-    }
+}
 
-    function showTextBlue() {
-        blankAll()
-        document.getElementById('innerCardBlue').innerHTML = /*HTML*/ `
+function showTextBlue() {
+  blankAll();
+  document.getElementById("innerCardBlue").innerHTML = /*HTML*/ `
         <div id="innerCardBlue" class="innerCard">
         Vi bruker HTML til å definere et dokument.
         <ul>
@@ -63,11 +63,11 @@
         </ul>
     </div>
     `;
-    }
+}
 
-    function showTextRed(){
-        blankAll()
-        document.getElementById('innerCardRed').innerHTML = /*HTML*/`
+function showTextRed() {
+  blankAll();
+  document.getElementById("innerCardRed").innerHTML = /*HTML*/ `
         <div id="innerCardRed" class="innerCard" >
         Vi bruker CSS til å <i>style</i> et dokument, altså farger, fonter, utseende og lignende.
         <ul>
@@ -87,11 +87,11 @@
         </ul>
     </div>
     `;
-    }
+}
 
-    function showTextYellow(){
-        blankAll()
-        document.getElementById('innerCardYellow').innerHTML = /*HTML*/`
+function showTextYellow() {
+  blankAll();
+  document.getElementById("innerCardYellow").innerHTML = /*HTML*/ `
         <div id="innerCardYellow" class="innerCard">
             Det viktigste vi skal lære er programmeringsspråket JavaScript. Vi skal lære grunnleggende programmering
             ved
@@ -105,121 +105,120 @@
             </ul>
         </div>
     `;
-    }
+}
 
-    function showTextBlack(){
-        blankAll()
-        document.getElementById('innerCardBlack').innerHTML = /*HTML*/ `
+function showTextBlack() {
+  blankAll();
+  document.getElementById("innerCardBlack").innerHTML = /*HTML*/ `
         <div id="showHead" class="bodyPart"></div>
         <div id="showBody" class="bodyPart"></div>
         <div id="showLegs" class="bodyPart"></div>
         `;
-        selecthead1();
-        selectbody1();
-        selectlegs1();
-        
-    }
+  selecthead1();
+  selectbody1();
+  selectlegs1();
+}
 
-    function blankAll() {
-        document.getElementById('innerCardGreen').innerHTML = ''
-        document.getElementById('innerCardBlue').innerHTML = ''
-        document.getElementById('innerCardRed').innerHTML = ''
-        document.getElementById('innerCardYellow').innerHTML = ''
-        document.getElementById('innerCardBlack').innerHTML = ''
-    } 
+function blankAll() {
+  document.getElementById("innerCardGreen").innerHTML = "";
+  document.getElementById("innerCardBlue").innerHTML = "";
+  document.getElementById("innerCardRed").innerHTML = "";
+  document.getElementById("innerCardYellow").innerHTML = "";
+  document.getElementById("innerCardBlack").innerHTML = "";
+}
 
-    function selecthead1() {
-        document.getElementById('showHead').innerHTML = /*HTML*/ `
+function selecthead1() {
+  document.getElementById("showHead").innerHTML = /*HTML*/ `
         <button onclick="selecthead4()">◀</button>
             <img src="img/head1.png" alt="">
         <button onclick="selecthead2()">▶</button>
         `;
-    }  
+}
 
-    function selecthead2() {
-        document.getElementById('showHead').innerHTML = /*HTML*/ `
+function selecthead2() {
+  document.getElementById("showHead").innerHTML = /*HTML*/ `
         <button onclick="selecthead1()">◀</button>
             <img src="img/head2.png" alt="">
         <button onclick="selecthead3()">▶</button>
         `;
-    }  
+}
 
-    function selecthead3() {
-        document.getElementById('showHead').innerHTML = /*HTML*/ `
+function selecthead3() {
+  document.getElementById("showHead").innerHTML = /*HTML*/ `
         <button onclick="selecthead2()">◀</button>
             <img src="img/head3.png" alt="">
         <button onclick="selecthead4()">▶</button>
         `;
-    } 
+}
 
-    function selecthead4() {
-        document.getElementById('showHead').innerHTML = /*HTML*/ `
+function selecthead4() {
+  document.getElementById("showHead").innerHTML = /*HTML*/ `
         <button onclick="selecthead3()">◀</button>
             <img src="img/head4.png" alt="">
         <button onclick="selecthead1()">▶</button>
         `;
-    } 
+}
 
-    function selectbody1() {
-        document.getElementById('showBody').innerHTML = /*HTML*/ `
+function selectbody1() {
+  document.getElementById("showBody").innerHTML = /*HTML*/ `
         <button onclick="selectbody4()">◀</button>
             <img src="img/body1.png" alt="">
         <button onclick="selectbody2()">▶</button>
         `;
-    } 
+}
 
-    function selectbody2() {
-        document.getElementById('showBody').innerHTML = /*HTML*/ `
+function selectbody2() {
+  document.getElementById("showBody").innerHTML = /*HTML*/ `
         <button onclick="selectbody1()">◀</button>
             <img src="img/body2.png" alt="">
         <button onclick="selectbody3()">▶</button>
         `;
-    }
+}
 
-    function selectbody3() {
-        document.getElementById('showBody').innerHTML = /*HTML*/ `
+function selectbody3() {
+  document.getElementById("showBody").innerHTML = /*HTML*/ `
         <button onclick="selectbody2()">◀</button>
             <img src="img/body3.png" alt="">
         <button onclick="selectbody4()">▶</button>
         `;
-    }
-    
-    function selectbody4() {
-        document.getElementById('showBody').innerHTML = /*HTML*/ `
+}
+
+function selectbody4() {
+  document.getElementById("showBody").innerHTML = /*HTML*/ `
         <button onclick="selectbody3()">◀</button>
             <img src="img/body4.png" alt="">
         <button onclick="selectbody1()">▶</button>
         `;
-    }
+}
 
-    function selectlegs1() {
-        document.getElementById('showLegs').innerHTML = /*HTML*/ `
+function selectlegs1() {
+  document.getElementById("showLegs").innerHTML = /*HTML*/ `
         <button onclick="selectlegs4()">◀</button>
             <img src="img/legs1.png" alt="">
         <button onclick="selectlegs2()">▶</button>
         `;
-    } 
+}
 
-    function selectlegs2() {
-        document.getElementById('showLegs').innerHTML = /*HTML*/ `
+function selectlegs2() {
+  document.getElementById("showLegs").innerHTML = /*HTML*/ `
         <button onclick="selectlegs1()">◀</button>
             <img src="img/legs2.png" alt="">
         <button onclick="selectlegs3()">▶</button>
         `;
-    }   
+}
 
-    function selectlegs3() {
-        document.getElementById('showLegs').innerHTML = /*HTML*/ `
+function selectlegs3() {
+  document.getElementById("showLegs").innerHTML = /*HTML*/ `
         <button onclick="selectlegs2()">◀</button>
             <img src="img/legs3.png" alt="">
         <button onclick="selectlegs4()">▶</button>
         `;
-    }
+}
 
-    function selectlegs4() {
-        document.getElementById('showLegs').innerHTML = /*HTML*/ `
+function selectlegs4() {
+  document.getElementById("showLegs").innerHTML = /*HTML*/ `
         <button onclick="selectlegs3()">◀</button>
             <img src="img/legs4.png" alt="">
         <button onclick="selectlegs1()">▶</button>
         `;
-    }
+}
