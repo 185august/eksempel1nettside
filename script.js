@@ -1,3 +1,19 @@
+const outputDiv = document.getElementById("output");
+let num1 = 0;
+let num2 = 0;
+
+function plus() {
+  num1 = num2 + 1;
+  num2 = num1;
+  outputDiv.innerHTML = num1;
+}
+
+function minus() {
+  num1 = num2 - 1;
+  num2 = num1;
+  outputDiv.innerHTML = num1;
+}
+
 function noLayout() {
   document.getElementById("cards").classList.value = "";
 }
